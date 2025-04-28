@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mnei Reformas & Manutenção - Soluções para seu Lar e Comércio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+        
+        .whatsapp-button {
+            background-color: #25D366;
+        }
+        
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+        
+        .services {
+            padding: 60px 20px;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .service-card h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .service-card ul {
+            list-style-position: inside;
+        }
+        
+        .service-card li {
+            margin-bottom: 8px;
+        }
+        
+        .contact {
+            padding: 60px 20px;
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input, 
+        .form-group textarea, 
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        .form-group textarea {
+            height: 120px;
+        }
+        
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-method {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            min-width: 250px;
+        }
+        
+        footer {
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .success-message {
+            margin-top: 20px; 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 15px; 
+            border-radius: 5px; 
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-methods {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Mnei Reformas & Manutenção</div>
+            <div class="tagline">Soluções completas para seu lar e comércio</div>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>Reformas e Manutenções com Qualidade e Garantia</h1>
+            <p>Serviços especializados em pintura, reformas, instalações e manutenção para residências e comércios, com eficiência e ótimo acabamento.</p>
+            <a href="https://wa.me/5554996556155" class="cta-button whatsapp-button">Fale pelo WhatsApp</a>
+            <a href="#contact" class="cta-button">Solicite um Orçamento</a>
+        </div>
+    </section>
+    
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Pintura</h3>
+                    <ul>
+                        <li>Retoques e pintura de pequenas áreas</li>
+                        <li>Aplicação de massa corrida e texturas</li>
+                        <li>Pintura completa de ambientes</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Reformas e Manutenção</h3>
+                    <ul>
+                        <li>Reparos em paredes de alvenaria e pisos</li>
+                        <li>Construção e manutenção de paredes de madeira e forro</li>
+                        <li>Pequenas reformas em geral</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Hidráulica</h3>
+                    <ul>
+                        <li>Conserto de vazamentos</li>
+                        <li>Instalação de torneiras e tubulações</li>
+                        <li>Desentupimentos simples</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Elétrica</h3>
+                    <ul>
+                        <li>Troca de lâmpadas, interruptores e tomadas</li>
+                        <li>Instalação de chuveiros</li>
+                        <li>Reparos em circuitos elétricos</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Instalações Diversas</h3>
+                    <ul>
+                        <li>Fixção de suportes, prateleiras e acessórios</li>
+                        <li>Instalações de Redes de Proteção (Janelas, sacadas)</li>
+                        <li>Instalações de varões de cortinas, fechaduras</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Áreas Externas</h3>
+                    <ul>
+                        <li>Corte de grama</li>
+                        <li>Aplicação de herbicida</li>
+                        <li>Pequenos reparos em jardins</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <h3>WhatsApp</h3>
+                    <p>Atendimento rápido e direto</p>
+                    <a href="https://wa.me/5554996556155" class="cta-button whatsapp-button">Chamar no WhatsApp</a>
+                </div>
+                
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <p>Para orçamentos detalhados</p>
+                    <a href="mailto:mneidelgado@gmail.com.br" class="cta-button">Enviar Email</a>
+                </div>
+                
+                <div class="contact-method">
+                    <h3>Ligação</h3>
+                    <p>Horário comercial</p>
+                    <a href="tel:54996556155" class="cta-button">Ligar Agora</a>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3 style="margin: 30px 0 20px;">Solicite seu Orçamento</h3>
+                <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Serviço desejado:</label>
+                        <select id="service" name="service" required>
+                            <option value="">Selecione um serviço...</option>
+                            <option value="Pintura">Pintura</option>
+                            <option value="Reformas">Reformas e Manutenção</option>
+                            <option value="Hidráulica">Hidráulica</option>
+                            <option value="Elétrica">Elétrica</option>
+                            <option value="Instalações">Instalações Diversas</option>
+                            <option value="Jardinagem">Áreas Externas/Jardinagem</option>
+                            <option value="Outros">Outros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Detalhes do serviço:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Enviar para WhatsApp</button>
+                </form>
+                
+                <div id="successMessage" class="hidden success-message">
+                    Mensagem preparada com sucesso! Você será redirecionado para o WhatsApp.
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>Mnei Reformas & Manutenção - Serviços de qualidade para seu lar e comércio</p>
+            <p>Telefone/WhatsApp: (54) 99655-6155 | Email: mneidelgado@gmail.com.br</p>
+            <p>© <span id="currentYear"></span> Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        // Função para enviar para o WhatsApp
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            
+            // Coletar dados do formulário
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Criar mensagem formatada
+            const whatsappMessage = `Olá Mnei Reformas, gostaria de solicitar um orçamento!\n\n` +
+                                   `*Nome:* ${name}\n` +
+                                   `*Telefone:* ${phone}\n` +
+                                   `*Serviço desejado:* ${service}\n` +
+                                   `*Detalhes:* ${message}`;
+            
+            // Codificar mensagem para URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            // Mostrar mensagem de sucesso
+            document.getElementById('successMessage').classList.remove('hidden');
+            document.getElementById('whatsappForm').classList.add('hidden');
+            
+            // Redirecionar para WhatsApp após 2 segundos
+            setTimeout(() => {
+                window.location.href = `https://wa.me/5554996556155?text=${encodedMessage}`;
+            }, 2000);
+        }
+
+        // Atualizar ano no footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
