@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mnei Reformas & Manutenção - Soluções para seu Lar e Comércio</title>
+    <title>Mnei Reformas & Manutenção em Caxias do Sul | Pintura, Reformas e Reparos</title>
+    <meta name="description" content="Serviços profissionais de reformas, pintura e manutenção em Caxias do Sul - RS. Atendimento rápido, orçamento gratuito e garantia de qualidade. Ligue (54) 99655-6155">
+    <meta name="keywords" content="reformas Caxias do Sul, pintura residencial, manutenção predial, serviços hidráulicos, elétrica, reparos, Rua Luiz Buratto">
+    <meta name="author" content="Mnei Reformas">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mnei Reformas & Manutenção em Caxias do Sul - RS">
+    <meta property="og:description" content="Serviços completos de reformas e manutenção residencial e comercial em Caxias do Sul">
+    <meta property="og:image" content="https://mneidelgado.github.io/images/destaque-reformas.jpg">
+    <meta property="og:url" content="https://mneidelgado.github.io">
+    <meta property="og:type" content="website">
+    
     <style>
         * {
             margin: 0;
@@ -88,6 +99,14 @@
         .whatsapp-button:hover {
             background-color: #128C7E;
         }
+
+        .google-button {
+            background-color: #4285F4;
+        }
+
+        .google-button:hover {
+            background-color: #3367D6;
+        }
         
         .services {
             padding: 60px 20px;
@@ -112,6 +131,11 @@
             border-radius: 8px;
             padding: 25px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
         }
         
         .service-card h3 {
@@ -126,6 +150,20 @@
         
         .service-card li {
             margin-bottom: 8px;
+        }
+        
+        .reviews {
+            padding: 40px 20px;
+            background-color: #f1f8fe;
+            text-align: center;
+        }
+
+        .reviews-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
         
         .contact {
@@ -179,6 +217,21 @@
             min-width: 250px;
         }
         
+        .localizacao {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        .localizacao iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
         footer {
             background-color: #1a252f;
             color: white;
@@ -213,6 +266,15 @@
                 flex-direction: column;
                 align-items: center;
             }
+            
+            .localizacao iframe {
+                height: 300px;
+            }
+
+            .reviews-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
@@ -220,14 +282,14 @@
     <header>
         <div class="container">
             <div class="logo">Mnei Reformas & Manutenção</div>
-            <div class="tagline">Soluções completas para seu lar e comércio</div>
+            <div class="tagline">Soluções completas para seu lar e comércio em Caxias do Sul</div>
         </div>
     </header>
     
     <section class="hero">
         <div class="container">
-            <h1>Reformas e Manutenções com Qualidade e Garantia</h1>
-            <p>Serviços especializados em pintura, reformas, instalações e manutenção para residências e comércios, com eficiência e ótimo acabamento.</p>
+            <h1>Reformas e Manutenções com Qualidade e Garantia em Caxias do Sul</h1>
+            <p>Serviços especializados em pintura, reformas, instalações e manutenção para residências e comércios, com eficiência e ótimo acabamento. Atendemos toda a região de Caxias do Sul - RS.</p>
             <a href="https://wa.me/5554996556155" class="cta-button whatsapp-button">Fale pelo WhatsApp</a>
             <a href="#contact" class="cta-button">Solicite um Orçamento</a>
         </div>
@@ -235,7 +297,7 @@
     
     <section class="services">
         <div class="container">
-            <h2 class="section-title">Nossos Serviços</h2>
+            <h2 class="section-title">Nossos Serviços em Caxias do Sul</h2>
             
             <div class="service-grid">
                 <div class="service-card">
@@ -294,6 +356,33 @@
             </div>
         </div>
     </section>
+
+    <!-- Nova Seção de Avaliações -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <p>Confira as avaliações de quem já contratou nossos serviços</p>
+            
+            <div class="reviews-buttons">
+                <a href="https://g.co/kgs/Ny8VXsQ" target="_blank" class="cta-button google-button">
+                    Ver Avaliações no Google
+                </a>
+                <a href="https://g.co/kgs/Ny8VXsQ" target="_blank" class="cta-button">
+                    Deixe sua Avaliação
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="localizacao">
+        <div class="container">
+            <h2 class="section-title">Nossa Localização em Caxias do Sul</h2>
+            <p>Estamos localizados na Rua Luiz Buratto, 398 - Caxias do Sul/RS</p>
+            <p>Atendemos em toda a região: Centro, São Pelegrino, Exposição, Cinquentenário e bairros adjacentes.</p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.123456789012!2d-51.12345678901234!3d-29.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDA3JzI0LjQiUyA1McKwMDcnMjQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
     
     <section id="contact" class="contact">
         <div class="container">
@@ -314,7 +403,7 @@
                 
                 <div class="contact-method">
                     <h3>Ligação</h3>
-                    <p>Horário comercial</p>
+                    <p>Horário comercial: Seg-Sex, 8h-18h</p>
                     <a href="tel:54996556155" class="cta-button">Ligar Agora</a>
                 </div>
             </div>
@@ -330,6 +419,11 @@
                     <div class="form-group">
                         <label for="phone">Telefone:</label>
                         <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Informe seu bairro em Caxias do Sul">
                     </div>
                     
                     <div class="form-group">
@@ -363,8 +457,18 @@
     
     <footer>
         <div class="container">
-            <p>Mnei Reformas & Manutenção - Serviços de qualidade para seu lar e comércio</p>
+            <p><strong>Mnei Reformas & Manutenção</strong> - Serviços de qualidade para seu lar e comércio em Caxias do Sul</p>
+            <p>Endereço: Rua Luiz Buratto, 398 - Caxias do Sul/RS</p>
             <p>Telefone/WhatsApp: (54) 99655-6155 | Email: mneidelgado@gmail.com.br</p>
+            
+            <div style="margin: 20px 0;">
+                <a href="https://g.co/kgs/Ny8VXsQ" target="_blank">
+                    <img src="https://www.gstatic.com/local/business/google_my_business_social_share_icons/google_my_business_en_US.png" 
+                         alt="Google Meu Negócio" 
+                         style="height: 40px; margin: 10px;">
+                </a>
+            </div>
+            
             <p>© <span id="currentYear"></span> Todos os direitos reservados</p>
         </div>
     </footer>
@@ -377,6 +481,7 @@
             // Coletar dados do formulário
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
+            const bairro = document.getElementById('bairro').value;
             const service = document.getElementById('service').value;
             const message = document.getElementById('message').value;
             
@@ -384,6 +489,7 @@
             const whatsappMessage = `Olá Mnei Reformas, gostaria de solicitar um orçamento!\n\n` +
                                    `*Nome:* ${name}\n` +
                                    `*Telefone:* ${phone}\n` +
+                                   `*Bairro:* ${bairro}\n` +
                                    `*Serviço desejado:* ${service}\n` +
                                    `*Detalhes:* ${message}`;
             
