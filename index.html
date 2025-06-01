@@ -40,17 +40,41 @@
             color: white;
             padding: 20px 0;
             text-align: center;
+            position: relative;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .logo-img {
+            height: 100px;
+            border-radius: 5px;
+        }
+        
+        .logo-text {
+            text-align: left;
         }
         
         .logo {
             font-size: 2.5rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
         
         .tagline {
             font-size: 1.2rem;
             opacity: 0.9;
+        }
+        
+        .cnpj-info {
+            font-size: 0.9rem;
+            margin-top: 10px;
+            opacity: 0.8;
         }
         
         .hero {
@@ -253,6 +277,12 @@
             text-align: center;
         }
         
+        .legal-info {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        
         @media (max-width: 768px) {
             .logo {
                 font-size: 2rem;
@@ -275,14 +305,33 @@
                 flex-direction: column;
                 align-items: center;
             }
+            
+            .logo-container {
+                flex-direction: column;
+            }
+            
+            .logo-text {
+                text-align: center;
+            }
+            
+            .logo-img {
+                height: 80px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">Mnei Reformas & Manutenção</div>
-            <div class="tagline">Soluções completas para seu lar e comércio em Caxias do Sul</div>
+            <div class="logo-container">
+                <!-- Logo MNEI Reformas & Manutenção -->
+                <img src="Logo MNEI .PNG" alt="MNEI Reformas & Manutenção" class="logo-img">
+                <div class="logo-text">
+                    <div class="logo">Mnei Reformas & Manutenção</div>
+                    <div class="tagline">Soluções completas para seu lar e comércio em Caxias do Sul</div>
+                    <div class="cnpj-info">CNPJ: 60.892.566/0001-05 | ME - Microempresa</div>
+                </div>
+            </div>
         </div>
     </header>
     
@@ -378,9 +427,9 @@
         <div class="container">
             <h2 class="section-title">Nossa Localização em Caxias do Sul</h2>
             <p>Estamos localizados na Rua Luiz Buratto, 408 - Caxias do Sul/RS</p>
-            <p>Atendemos em toda a região de Caxias e cidades vizinhas: Centro e bairros adjacentes.</p>
+            <p>Atendemos em toda a região: Centro, São Pelegrino, Exposição, Cinquentenário e bairros adjacentes.</p>
             
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.4424553326444!2d-51.203032525093725!3d-29.181097891779498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea36487891f53%3A0x46d08bbc4f1a79fb!2sMnei%20Reformas%20%26%20Manuten%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1746919007705!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.4424553326444!2d-51.203032525093725!3d-29.181097891779498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea36487891f53%3A0x46d08bbc4f1a79fb!2sMnei%20Reformas%20%26%20Manuten%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1746919007705!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
     
@@ -403,7 +452,7 @@
                 
                 <div class="contact-method">
                     <h3>Ligação</h3>
-                    <p>Horário comercial: Seg-Sex, 7h-18h</p>
+                    <p>Horário comercial: Seg-Sex, 8h-18h</p>
                     <a href="tel:54996556155" class="cta-button">Ligar Agora</a>
                 </div>
             </div>
@@ -458,8 +507,13 @@
     <footer>
         <div class="container">
             <p><strong>Mnei Reformas & Manutenção</strong> - Serviços de qualidade para seu lar e comércio em Caxias do Sul</p>
-            <p>Endereço: Rua Luiz Buratto, 408 - Caxias do Sul/RS</p>
-            <p class="texto-branco">Telefone/WhatsApp: (54) 99655-6155 | Email: mneidelgado@gmail.com.br</p>
+            <p>Endereço: Rua Luiz Buratto, 408 - Caxias do Sul/RS | CEP 95.099-330</p>
+            <p>Telefone/WhatsApp: (54) 99655-6155 | Email: mneidelgado@gmail.com.br</p>
+            
+            <div class="legal-info">
+                <p>CNPJ: 60.892.566/0001-05 | Empresário Individual - ME | Inscrição Municipal: 284643 processo</p>
+                <p>Atividade Principal: Serviços de pintura de edifícios em geral (CNAE 43.30-4-04)</p>
+            </div>
             
             <div style="margin: 20px 0;">
                 <a href="https://g.co/kgs/Ny8VXsQ" target="_blank">
