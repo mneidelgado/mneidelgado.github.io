@@ -357,6 +357,26 @@
             .whatsapp-float:hover {
                 transform: scale(1.1);
             }
+            /* ANIMAÇÃO PULSANDO */
+            @keyframes pulse {
+                0% {
+                    transform: scale(1);
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+                }
+                70% {
+                    transform: scale(1.1);
+                    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+                }
+                100% {
+                    transform: scale(1);
+                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+                }
+            }
+            
+            /* APLICA ANIMAÇÃO */
+            .whatsapp-float {
+                animation: pulse 2s infinite;
+            }
         
     </style>
 </head>
@@ -397,6 +417,7 @@
                         <li>Retoques e pintura de pequenas áreas</li>
                         <li>Aplicação de massa corrida e texturas</li>
                         <li>Pintura completa de ambientes</li>
+                        <li>Pintura de telhados</li> <! -- NOVO -->
                     </ul>
                 </div>
                 
@@ -428,7 +449,7 @@
                 </div>
                 
                 <div class="service-card destaque">
-                    <h3>⚡ Instalação de Wall Box</h3>
+                    <h3>⚡ Instalação de Wall Box</h3> <! -- NOVO -->
                 
                     <ul>
                         <li>Carregador para veículos elétricos (residencial e comercial)</li>
@@ -464,6 +485,8 @@
                         <li>Limpeza de calhas</li>
                         <li>Limpeza de ralos</li>
                         <li>Limpeza de caixas de gordura</li>
+                        <li>Limpeza de telhados</li>
+                        <li>Limpeza de fachadas</li>
                     </ul>
                 </div>
                 
@@ -558,6 +581,7 @@
                             <option value="Hidráulica">Hidráulica</option>
                             <option value="Elétrica">Elétrica</option>
                             <option value="Wall Box">Instalação de Wall Box</option>
+                            <option value="Wall Box">Limpezas</option>
                             <option value="Instalações">Instalações Diversas</option>
                             <option value="Jardinagem">Áreas Externas/Jardinagem</option>
                             <option value="Outros">Outros</option>
