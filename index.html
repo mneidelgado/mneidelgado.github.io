@@ -334,7 +334,30 @@
             .botao:hover {
                 background: #1ebe5d;
                 transform: scale(1.05);
-            }        
+            }
+            /* BOTÃO FLUTUANTE WHATSAPP */
+            .whatsapp-float {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: #25D366;
+                color: white;
+                font-size: 28px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                z-index: 999;
+            }
+            
+            .whatsapp-float:hover {
+                transform: scale(1.1);
+            }
+        
     </style>
 </head>
 <body>
@@ -493,6 +516,7 @@
                 <div class="contact-method">
                     <h3>Ligação</h3>
                     <p>Horário comercial: Seg-Sex, 8h-18h</p>
+                    <p>Horário fim de semana: Sáb: 8h-12h</p>
                     <a href="tel:54996556155" class="cta-button">Ligar Agora</a>
                 </div>
             </div>
@@ -604,5 +628,8 @@
         // Atualizar ano no footer
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
+    <a href="https://wa.me/5554996556155" class="whatsapp-float" target="_blank">
+        💬
+    </a>
 </body>
 </html>
