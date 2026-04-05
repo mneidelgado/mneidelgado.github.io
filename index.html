@@ -386,6 +386,16 @@
                 </div>
                 
                 <div class="service-card">
+                    <h3>Instalação de Wall Box</h3>
+                    <ul>
+                        <li>Instalação de carregador para veículos elétricos</li>
+                        <li>Adequação do quadro elétrico</li>
+                        <li>Instalação de disjuntor dedicado</li>
+                        <li>Passagem de cabeamento e infraestrutura</li>
+                    </ul>
+                </div>                
+                
+                <div class="service-card">
                     <h3>Instalações Diversas</h3>
                     <ul>
                         <li>Fixção de suportes, prateleiras e acessórios</li>
@@ -458,7 +468,7 @@
             </div>
             
             <div class="contact-form">
-                <h3 style="margin: 30px 0 20px;">Solicite seu Orçamento</h3>
+                <h3 style="margin: 30px 0 20px;">Solicite seu Orçamento gratuito agora</h3>
                 <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
                     <div class="form-group">
                         <label for="name">Nome:</label>
@@ -483,6 +493,7 @@
                             <option value="Reformas">Reformas e Manutenção</option>
                             <option value="Hidráulica">Hidráulica</option>
                             <option value="Elétrica">Elétrica</option>
+                            <option value="Wall Box">Instalação de Wall Box</option>
                             <option value="Instalações">Instalações Diversas</option>
                             <option value="Jardinagem">Áreas Externas/Jardinagem</option>
                             <option value="Outros">Outros</option>
@@ -540,7 +551,7 @@
             const message = document.getElementById('message').value;
             
             // Criar mensagem formatada
-            const whatsappMessage = `Olá Mnei Reformas, gostaria de solicitar um orçamento!\n\n` +
+            const whatsappMessage = `Olá, vi o site da Mnei Reformas, gostaria de solicitar um orçamento!\n\n` +
                                    `*Nome:* ${name}\n` +
                                    `*Telefone:* ${phone}\n` +
                                    `*Bairro:* ${bairro}\n` +
