@@ -1,757 +1,2375 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MNEI Reformas & Manutenção em Caxias do Sul | Pintura, Reformas e Reparos</title>
-    <meta name="description" content="Serviços profissionais de reformas, pintura e manutenção em Caxias do Sul - RS. Atendimento rápido, orçamento gratuito e garantia de qualidade. Ligue (54) 99655-6155">
-    <meta name="keywords" content="reformas Caxias do Sul, pintura residencial, manutenção predial, serviços hidráulicos, elétrica, reparos, Rua Luiz Buratto">
-    <meta name="author" content="Mnei Reformas">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Mnei Reformas & Manutenção em Caxias do Sul - RS">
-    <meta property="og:description" content="Serviços completos de reformas e manutenção residencial e comercial em Caxias do Sul">
-    <meta property="og:image" content="https://mneidelgado.github.io/images/destaque-reformas.jpg">
-    <meta property="og:url" content="https://mneidelgado.github.io">
-    <meta property="og:type" content="website">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-        }
-        
-        .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .logo-img {
-            height: 100px;
-            border-radius: 5px;
-        }
-        
-        .logo-text {
-            text-align: left;
-        }
-        
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .tagline {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        .cnpj-info {
-            font-size: 0.9rem;
-            margin-top: 10px;
-            opacity: 0.8;
-        }
-        
-        .hero {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        .hero .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .hero .container a {
-            margin:5px;
-        }
+  <title>MNEI Reformas & Manutenção | Soluções para Imóveis em Caxias do Sul</title>
 
-        .hero .container a {
-            margin:6px 0;
-            width: 260px;
-            text-align: center;
-        }        
-        .cta-button {
-            display: inline-block;
-            background-color: #e74c3c;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: background-color 0.3s;
-            margin: 5px;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .cta-button:hover {
-            background-color: #c0392b;
-        }
-        
-        .whatsapp-button {
-            background-color: #25D366;
-        }
-        
-        .whatsapp-button:hover {
-            background-color: #128C7E;
-        }
+  <meta name="description" content="MNEI Reformas & Manutenção: soluções para imóveis residenciais, comerciais e corporativos. Reformas, manutenção preventiva e corretiva, elétrica, hidráulica, pintura, pisos, revestimentos e manutenção predial em Caxias do Sul e região.">
 
-        .google-button {
-            background-color: #4285F4;
-        }
+  <meta name="keywords" content="reformas Caxias do Sul, manutenção predial Caxias do Sul, manutenção residencial, manutenção comercial, pintura, elétrica, hidráulica, pisos, revestimentos, reformas comerciais, imobiliárias">
 
-        .google-button:hover {
-            background-color: #3367D6;
-        }
-        
-        .services {
-            padding: 60px 20px;
-            background-color: white;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 2rem;
-            color: #2c3e50;
-        }
-        
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .service-card {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
+  <meta name="author" content="MNEI Reformas & Manutenção">
+  <meta name="robots" content="index, follow">
 
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .service-card h3 {
-            color: #e74c3c;
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-        
-        .service-card ul {
-            list-style-position: inside;
-        }
-        
-        .service-card li {
-            margin-bottom: 8px;
-        }
-        
-        .reviews {
-            padding: 40px 20px;
-            background-color: #f1f8fe;
-            text-align: center;
-        }
+  <meta property="og:title" content="MNEI Reformas & Manutenção">
+  <meta property="og:description" content="Do reparo à reforma completa. Soluções para imóveis residenciais, comerciais e corporativos.">
+  <meta property="og:url" content="https://mneidelgado.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
 
-        .reviews-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        
-        .contact {
-            padding: 60px 20px;
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-        }
-        
-        .contact-form {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        
-        .form-group input, 
-        .form-group textarea, 
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-        }
-        
-        .form-group textarea {
-            height: 120px;
-        }
-        
-        .contact-methods {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .contact-method {
-            background-color: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 8px;
-            min-width: 250px;
-        }
-        
-        .localizacao {
-            padding: 40px 20px;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
-        
-        .localizacao iframe {
-            border: 0;
-            width: 100%;
-            height: 400px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        
-        footer {
-            background-color: #1a252f;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-        }
-        
-        .hidden {
-            display: none;
-        }
-        
-        .success-message {
-            margin-top: 20px; 
-            background-color: #4CAF50; 
-            color: white; 
-            padding: 15px; 
-            border-radius: 5px; 
-            text-align: center;
-        }
-        
-        .legal-info {
-            margin-top: 20px;
-            font-size: 0.8rem;
-            opacity: 0.7;
-        }
-        
-        @media (max-width: 768px) {
-            .logo {
-                font-size: 2rem;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .contact-methods {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .localizacao iframe {
-                height: 300px;
-            }
+  <link rel="canonical" href="https://mneidelgado.github.io/">
 
-            .reviews-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .logo-container {
-                flex-direction: column;
-            }
-            
-            .logo-text {
-                text-align: center;
-            }
-            
-            .logo-img {
-                height: 80px;
-            }
-        }
-        
-            .botao {
-                display: inline-block;
-                margin-top: 15px;
-                padding: 12px 18px;
-                background: #25D366;
-                color: white;
-                text-decoration: none;
-                border-radius: 8px;
-                font-weight: bold;
-                transition: 0.3s;
-            }
-            
-            .botao:hover {
-                background: #1ebe5d;
-                transform: scale(1.05);
-            }
-            /* BOTÃO FLUTUANTE WHATSAPP */
-            .whatsapp-float {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                background: #25D366;
-                color: white;
-                font-size: 28px;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-                z-index: 999;
-            }
-            
-            .whatsapp-float:hover {
-                transform: scale(1.1);
-            }
-            /* ANIMAÇÃO PULSANDO */
-            @keyframes pulse {
-                0% {
-                    transform: scale(1);
-                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-                }
-                70% {
-                    transform: scale(1.1);
-                    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-                }
-                100% {
-                    transform: scale(1);
-                    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-                }
-            }
-            
-            /* APLICA ANIMAÇÃO */
-            .whatsapp-float {
-                animation: pulse 2s infinite;
-            }
-            .instagram-btn {
-                display: inline-block;
-                margin-top: 10px;
-                margin-left: 10px;
-                padding: 12px 18px;
-                background: #E1306C;
-                color: white;
-                text-decoration: none;
-                border-radius: 8px;
-                font-weight: bold;
-                transition: 0.3s;
-            }
-            
-            .instagram-btn:hover {
-                background: #c72c61;
-                transform: scale(1.05);
-            }
-            .google-btn {
-                display: inline-block;
-                margin-top: 10px;
-                margin-left: 10px;
-                padding: 12px 18px;
-                background: #4285F4;
-                color: white;
-                text-decoration: none;
-                border-radius: 8px;
-                font-weight: bold;
-                transition: 0.3s;
-            }
-            
-            .google-btn:hover {
-                background: #3367d6;
-                transform: scale(1.05);
-            }        
-        
-    </style>
+  <style>
+
+    :root {
+      --navy: #102b3f;
+      --navy-dark: #081b2a;
+      --red: #d92f27;
+      --red-dark: #b5221d;
+      --blue: #185b8d;
+      --white: #ffffff;
+      --light: #f5f7f9;
+      --text: #263746;
+      --muted: #687887;
+      --border: #e1e7ec;
+      --green: #25D366;
+      --shadow: 0 12px 35px rgba(8, 27, 42, 0.10);
+      --radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--light);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      background: var(--navy);
+      color: white;
+      border-bottom: 4px solid var(--red);
+    }
+
+    .header-inner {
+      min-height: 105px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .logo-img {
+      width: 85px;
+      height: 85px;
+      object-fit: contain;
+      background: white;
+      border-radius: 10px;
+      padding: 4px;
+    }
+
+    .brand h1 {
+      font-size: 1.8rem;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .brand p {
+      color: rgba(255,255,255,.82);
+      font-size: .95rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 18px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: .9rem;
+      opacity: .9;
+    }
+
+    nav a:hover {
+      opacity: 1;
+      color: white;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      color: white;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(8,27,42,.94),
+          rgba(8,27,42,.68)
+        ),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      padding: 105px 0 90px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      padding: 7px 14px;
+      border-radius: 30px;
+      font-size: .8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 18px;
+    }
+
+    .hero h2 {
+      font-size: clamp(2.4rem, 5vw, 4.3rem);
+      line-height: 1.05;
+      margin-bottom: 22px;
+    }
+
+    .hero h2 span {
+      color: #ff5b54;
+    }
+
+    .hero .lead {
+      font-size: 1.18rem;
+      max-width: 780px;
+      color: rgba(255,255,255,.92);
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50px;
+      padding: 13px 22px;
+      border-radius: 9px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-red {
+      background: var(--red);
+      color: white;
+    }
+
+    .btn-red:hover {
+      background: var(--red-dark);
+    }
+
+    .btn-whatsapp {
+      background: var(--green);
+      color: white;
+    }
+
+    .btn-whatsapp:hover {
+      background: #128c7e;
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,.55);
+      background: rgba(255,255,255,.05);
+      color: white;
+    }
+
+    .trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: rgba(255,255,255,.92);
+      font-weight: bold;
+      font-size: .93rem;
+    }
+
+    /* =========================
+       GERAL
+    ========================= */
+
+    section {
+      padding: 78px 0;
+    }
+
+    .section-head {
+      max-width: 780px;
+      text-align: center;
+      margin: 0 auto 42px;
+    }
+
+    .section-label {
+      color: var(--red);
+      font-size: .8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 8px;
+    }
+
+    .section-head h2 {
+      color: var(--navy);
+      font-size: clamp(1.9rem, 4vw, 2.7rem);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+    }
+
+    /* =========================
+       SOLUÇÕES
+    ========================= */
+
+    .solutions {
+      background: white;
+    }
+
+    .solution-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .solution-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-top: 5px solid var(--red);
+      border-radius: var(--radius);
+      padding: 27px;
+      box-shadow: var(--shadow);
+      transition: .2s ease;
+    }
+
+    .solution-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .solution-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .solution-card h3 {
+      color: var(--navy);
+      font-size: 1.3rem;
+      margin-bottom: 9px;
+    }
+
+    .solution-card p {
+      color: var(--muted);
+      margin-bottom: 15px;
+    }
+
+    .solution-card ul {
+      list-style: none;
+    }
+
+    .solution-card li {
+      position: relative;
+      padding-left: 20px;
+      margin: 7px 0;
+      font-size: .94rem;
+    }
+
+    .solution-card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--red);
+      font-weight: bold;
+    }
+
+    /* =========================
+       EXPERIÊNCIA
+    ========================= */
+
+    .experience {
+      background: var(--light);
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .experience-box {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-box h3 {
+      color: var(--navy);
+      font-size: 1.5rem;
+      margin-bottom: 14px;
+    }
+
+    .experience-box > p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .case-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .case {
+      background: #f8fafc;
+      border-left: 4px solid var(--red);
+      border-radius: 8px;
+      padding: 15px 17px;
+    }
+
+    .case strong {
+      color: var(--navy);
+    }
+
+    .case span {
+      color: var(--muted);
+      font-size: .93rem;
+    }
+
+    .experience-note {
+      margin-top: 20px;
+      font-size: .82rem;
+      color: var(--muted);
+    }
+
+    /* =========================
+       EMPRESAS / IMOBILIÁRIAS
+    ========================= */
+
+    .business {
+      background: white;
+    }
+
+    .business-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .business-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .business-card h3 {
+      color: var(--navy);
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .business-card p {
+      color: var(--muted);
+    }
+
+    .business-card ul {
+      list-style: none;
+      margin-top: 18px;
+    }
+
+    .business-card li {
+      position: relative;
+      padding: 8px 0 8px 25px;
+      border-bottom: 1px solid #edf0f3;
+    }
+
+    .business-card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--red);
+      font-weight: bold;
+    }
+
+    /* =========================
+       POR QUE MNEI
+    ========================= */
+
+    .why {
+      background: var(--navy);
+      color: white;
+    }
+
+    .why .section-head h2 {
+      color: white;
+    }
+
+    .why .section-head p {
+      color: rgba(255,255,255,.72);
+    }
+
+    .why .section-label {
+      color: #ff6963;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .why-card {
+      padding: 26px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 14px;
+    }
+
+    .why-card h3 {
+      margin: 10px 0 7px;
+    }
+
+    .why-card p {
+      color: rgba(255,255,255,.72);
+    }
+
+    .big-number {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #ff6963;
+    }
+
+    /* =========================
+       AVALIAÇÕES
+    ========================= */
+
+    .reviews {
+      background: #edf5fb;
+      text-align: center;
+    }
+
+    .rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 13px;
+      background: white;
+      padding: 14px 20px;
+      border-radius: 999px;
+      box-shadow: 0 8px 25px rgba(13,28,43,.08);
+      margin-bottom: 20px;
+    }
+
+    .stars {
+      color: #f4b400;
+      font-size: 1.35rem;
+      letter-spacing: 1px;
+    }
+
+    .rating strong {
+      color: var(--navy);
+      font-size: 1.3rem;
+    }
+
+    .review-copy {
+      max-width: 720px;
+      margin: 0 auto 25px;
+      color: var(--muted);
+    }
+
+    /* =========================
+       CONTATO
+    ========================= */
+
+    .contact {
+      background: var(--navy-dark);
+      color: white;
+    }
+
+    .contact .section-head h2 {
+      color: white;
+    }
+
+    .contact .section-head p {
+      color: rgba(255,255,255,.72);
+    }
+
+    .contact .section-label {
+      color: #ff6963;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 14px;
+    }
+
+    .contact-item {
+      padding: 21px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 12px;
+    }
+
+    .contact-item h3 {
+      margin-bottom: 5px;
+    }
+
+    .contact-item p {
+      color: rgba(255,255,255,.72);
+    }
+
+    .contact-item a {
+      display: inline-block;
+      margin-top: 8px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .form-card {
+      background: white;
+      color: var(--text);
+      padding: 30px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .form-card h3 {
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+
+    .form-intro {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      color: var(--navy);
+      font-size: .92rem;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #d7dee6;
+      border-radius: 8px;
+      font: inherit;
+      color: var(--text);
+      background: white;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid rgba(31,95,149,.18);
+      border-color: var(--blue);
+    }
+
+    .success-message {
+      display: none;
+      margin-top: 15px;
+      padding: 13px;
+      background: #e8f8ef;
+      color: #146c3a;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    /* =========================
+       LOCALIZAÇÃO
+    ========================= */
+
+    .location {
+      background: white;
+      text-align: center;
+    }
+
+    .location iframe {
+      width: 100%;
+      height: 360px;
+      border: 0;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      margin-top: 25px;
+    }
+
+    /* =========================
+       RODAPÉ
+    ========================= */
+
+    footer {
+      background: #07131e;
+      color: white;
+      text-align: center;
+      padding: 35px 0;
+    }
+
+    footer p {
+      color: rgba(255,255,255,.68);
+      font-size: .88rem;
+      margin: 5px 0;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 18px 0;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .legal-info {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.10);
+      font-size: .78rem;
+    }
+
+    /* =========================
+       WHATSAPP FLUTUANTE
+    ========================= */
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--green);
+      color: white;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.25);
+      z-index: 999;
+      animation: pulse 2.2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,.55);
+      }
+
+      70% {
+        box-shadow: 0 0 0 15px rgba(37,211,102,0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,0);
+      }
+
+    }
+
+    /* =========================
+       RESPONSIVO
+    ========================= */
+
+    @media (max-width: 980px) {
+
+      .solution-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .experience-grid,
+      .business-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 760px) {
+
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .header-inner {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px 0;
+      }
+
+      .brand {
+        flex-direction: column;
+      }
+
+      .brand p {
+        max-width: 340px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 72px 0 65px;
+      }
+
+      .hero h2 {
+        font-size: 2.45rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .trust-strip {
+        display: grid;
+        gap: 8px;
+      }
+
+      section {
+        padding: 58px 0;
+      }
+
+      .solution-grid,
+      .why-grid,
+      .business-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .experience-box,
+      .business-card,
+      .form-card {
+        padding: 23px;
+      }
+
+      .location iframe {
+        height: 290px;
+      }
+
+    }
+
+  </style>
+
+  <!-- Dados estruturados para o Google -->
+  <script type="application/ld+json">
+
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MNEI Reformas & Manutenção",
+    "description": "Microempresa de reformas, manutenção e soluções para imóveis residenciais, comerciais e corporativos.",
+    "url": "https://mneidelgado.github.io/",
+    "telephone": "+55-54-99655-6155",
+
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Luiz Buratto, 408",
+      "addressLocality": "Caxias do Sul",
+      "addressRegion": "RS",
+      "postalCode": "95099-330",
+      "addressCountry": "BR"
+    },
+
+    "areaServed": {
+      "@type": "City",
+      "name": "Caxias do Sul"
+    },
+
+    "sameAs": [
+      "https://instagram.com/mneidelgado"
+    ]
+  }
+
+  </script>
+
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <!-- Logo MNEI Reformas & Manutenção -->
-                <img src="Logo MNEI .PNG" alt="MNEI Reformas & Manutenção" class="logo-img">
-                <div class="logo-text">
-                    <div class="logo">Mnei Reformas & Manutenção</div>
-                    <div class="tagline">Soluções completas para seu lar e comércio em Caxias do Sul</div>
-                    <div class="cnpj-info">CNPJ: 60.892.566/0001-05 | ME - Microempresa</div>
-                </div>
-            </div>
+
+  <header>
+
+    <div class="container header-inner">
+
+      <div class="brand">
+
+        <img
+          src="Logo MNEI .PNG"
+          alt="MNEI Reformas & Manutenção"
+          class="logo-img"
+        >
+
+        <div>
+
+          <h1>MNEI Reformas & Manutenção</h1>
+
+          <p>
+            Soluções completas para imóveis residenciais,
+            comerciais e corporativos.
+          </p>
+
         </div>
-    </header>
-    
+
+      </div>
+
+      <nav aria-label="Navegação principal">
+
+        <a href="#solucoes">Soluções</a>
+
+        <a href="#experiencia">Experiência</a>
+
+        <a href="#empresas">Empresas</a>
+
+        <a href="#avaliacoes">Avaliações</a>
+
+        <a href="#contato">Orçamento</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
     <section class="hero">
-        <div class="container">
-            <h1>Reformas e Manutenções com Qualidade e Garantia em Caxias do Sul</h1>
-            <p>Serviços especializados em pintura, reformas, instalações e manutenção para residências e comércios, com eficiência e ótimo acabamento. Atendemos toda a região de Caxias do Sul - RS.</p>
-            <p style="margin-top:15px;">
-                ✔ Atendimento rápido • ✔ Orçamento gratuito • ✔ Profissional qualificado
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            Reformas • Manutenção • Manutenção Predial
+          </span>
+
+          <h2>
+            Seu imóvel precisa de uma solução?
+            <span>A MNEI resolve.</span>
+          </h2>
+
+          <p class="lead">
+
+            Reformas, manutenção preventiva e corretiva,
+            instalações e adequações para residências,
+            empresas, comércios e imobiliárias.
+
+            <strong>
+              Do reparo à reforma completa.
+            </strong>
+
+          </p>
+
+          <div class="hero-buttons">
+
+            <a
+              class="btn btn-whatsapp"
+              href="https://wa.me/5554996556155"
+              target="_blank"
+              rel="noopener"
+            >
+              💬 Solicitar orçamento pelo WhatsApp
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="#contato"
+            >
+              Conhecer nossas soluções
+            </a>
+
+          </div>
+
+          <div class="trust-strip">
+
+            <span>
+              ✔ +200 avaliações no Google
+            </span>
+
+            <span>
+              ✔ 4,9 estrelas
+            </span>
+
+            <span>
+              ✔ Experiência residencial, comercial e corporativa
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="solucoes" class="solutions">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            O que a MNEI resolve
+          </div>
+
+          <h2>
+            Mais do que serviços.
+            Soluções para o seu imóvel.
+          </h2>
+
+          <p>
+            Organizamos nossa atuação para atender desde
+            pequenos reparos até reformas e necessidades
+            de manutenção de empresas e imobiliárias.
+          </p>
+
+        </div>
+
+
+        <div class="solution-grid">
+
+
+          <article class="solution-card">
+
+            <div class="solution-icon">
+              🏠
+            </div>
+
+            <h3>
+              Reformas
+            </h3>
+
+            <p>
+              Do reparo à transformação completa do ambiente.
             </p>
-            <a href="https://wa.me/5554996556155" class="cta-button whatsapp-button">
-                💬 Chamar no WhatsApp
+
+            <ul>
+
+              <li>Pintura</li>
+
+              <li>Pisos e revestimentos</li>
+
+              <li>Banheiros e cozinhas</li>
+
+              <li>Alvenaria e Drywall</li>
+
+              <li>Telhados e áreas externas</li>
+
+              <li>Impermeabilização</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="solution-card">
+
+            <div class="solution-icon">
+              🔧
+            </div>
+
+            <h3>
+              Manutenção
+            </h3>
+
+            <p>
+              Um único parceiro para cuidar
+              do que seu imóvel precisa.
+            </p>
+
+            <ul>
+
+              <li>Elétrica</li>
+
+              <li>Hidráulica</li>
+
+              <li>Pintura e reparos</li>
+
+              <li>Instalações</li>
+
+              <li>Adequações</li>
+
+              <li>Manutenção corretiva</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="solution-card">
+
+            <div class="solution-icon">
+              🏢
+            </div>
+
+            <h3>
+              Manutenção Predial
+            </h3>
+
+            <p>
+              Prevenção, correção e conservação
+              para empresas e imóveis.
+            </p>
+
+            <ul>
+
+              <li>Manutenção preventiva</li>
+
+              <li>Manutenção corretiva</li>
+
+              <li>Inspeções e levantamentos</li>
+
+              <li>Elétrica e hidráulica</li>
+
+              <li>Pintura e acabamento</li>
+
+              <li>Pequenas reformas</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="solution-card">
+
+            <div class="solution-icon">
+              🤝
+            </div>
+
+            <h3>
+              Imobiliárias
+            </h3>
+
+            <p>
+              Manutenção e preparação de imóveis
+              após desocupação ou antes da entrega.
+            </p>
+
+            <ul>
+
+              <li>Levantamento de necessidades</li>
+
+              <li>Orçamentos</li>
+
+              <li>Manutenção corretiva</li>
+
+              <li>Pintura</li>
+
+              <li>Pisos e revestimentos</li>
+
+              <li>Adequações e reparos</li>
+
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="experiencia" class="experience">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Experiência real
+          </div>
+
+          <h2>
+            Experiência que gera confiança
+          </h2>
+
+          <p>
+            A MNEI atua em diferentes ambientes e segmentos,
+            incluindo residências, empresas, estabelecimentos
+            comerciais, clínicas e imóveis administrados
+            por imobiliárias.
+          </p>
+
+        </div>
+
+
+        <div class="experience-grid">
+
+
+          <div class="experience-box">
+
+            <h3>
+              Experiência em diferentes ambientes
+            </h3>
+
+            <div class="case-list">
+
+
+              <div class="case">
+
+                <strong>
+                  Ambientes corporativos
+                </strong>
+
+                <br>
+
+                <span>
+                  Execução de reformas, troca de pisos,
+                  reparos e adequações.
+                </span>
+
+              </div>
+
+
+              <div class="case">
+
+                <strong>
+                  Empresas e estabelecimentos comerciais
+                </strong>
+
+                <br>
+
+                <span>
+                  Manutenção preventiva e corretiva,
+                  elétrica, hidráulica, pintura e reparos.
+                </span>
+
+              </div>
+
+
+              <div class="case">
+
+                <strong>
+                  Clínicas e ambientes de atendimento
+                </strong>
+
+                <br>
+
+                <span>
+                  Manutenção preventiva e corretiva,
+                  incluindo elétrica, hidráulica,
+                  pintura e Drywall.
+                </span>
+
+              </div>
+
+
+              <div class="case">
+
+                <strong>
+                  Imóveis administrados por imobiliárias
+                </strong>
+
+                <br>
+
+                <span>
+                  Levantamento de necessidades,
+                  orçamentos, manutenção e preparação
+                  para nova ocupação.
+                </span>
+
+              </div>
+
+
+              <div class="case">
+
+                <strong>
+                  Residências
+                </strong>
+
+                <br>
+
+                <span>
+                  Reformas, pintura, pisos, revestimentos,
+                  elétrica, hidráulica e manutenção geral.
+                </span>
+
+              </div>
+
+
+            </div>
+
+
+            <p class="experience-note">
+
+              A MNEI trabalha com uma rede profissional da
+              construção civil, acionada conforme a necessidade
+              técnica de cada projeto.
+
+            </p>
+
+          </div>
+
+
+          <div class="experience-box">
+
+            <h3>
+              Uma empresa preparada para resolver
+            </h3>
+
+            <p>
+              A experiência da MNEI vai além da execução
+              de serviços isolados. Nosso objetivo é
+              compreender a necessidade do imóvel,
+              organizar o serviço e entregar uma solução
+              clara para o cliente.
+            </p>
+
+
+            <div class="case-list">
+
+
+              <div class="case">
+
+                <strong>
+                  ✔ Levantamento
+                </strong>
+
+                <br>
+
+                <span>
+                  Entendimento da necessidade e das
+                  condições do local.
+                </span>
+
+              </div>
+
+
+              <div class="case">
+
+                <strong>
+                  ✔ Orçamento
+                </strong>
+
+                <br>
+
+                <span>
+                  Escopo organizado e apresentação
+                  clara dos serviços.
+                </span>
+
+              </div>
+
+
+              <div class="case">
+
+                <strong>
+                  ✔ Execução
+                </strong>
+
+                <br>
+
+                <span>
+                  Organização, acompanhamento e atenção
+                  ao acabamento.
+                </span>
+
+              </div>
+
+
+              <div class="case">
+
+                <strong>
+                  ✔ Manutenção
+                </strong>
+
+                <br>
+
+                <span>
+                  Possibilidade de atuação preventiva
+                  e corretiva.
+                </span>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="empresas" class="business">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Atendimento profissional
+          </div>
+
+          <h2>
+            Uma solução para empresas e imobiliárias
+          </h2>
+
+          <p>
+            A MNEI pode atuar como parceira para resolver
+            necessidades de manutenção, reformas e
+            adequações sem a empresa precisar administrar
+            diversos profissionais.
+          </p>
+
+        </div>
+
+
+        <div class="business-grid">
+
+
+          <article class="business-card">
+
+            <h3>
+              🏢 Para empresas
+            </h3>
+
+            <p>
+              Manutenção preventiva e corretiva para
+              escritórios, clínicas, lojas, estabelecimentos
+              comerciais e outros imóveis.
+            </p>
+
+            <ul>
+
+              <li>
+                Levantamento das necessidades
+              </li>
+
+              <li>
+                Orçamento e definição do escopo
+              </li>
+
+              <li>
+                Manutenção elétrica e hidráulica
+              </li>
+
+              <li>
+                Pintura, Drywall e acabamento
+              </li>
+
+              <li>
+                Reparos e adequações
+              </li>
+
+              <li>
+                Pequenas reformas
+              </li>
+
+            </ul>
+
+            <a
+              class="btn btn-red"
+              href="#contato"
+              style="margin-top:20px;"
+            >
+              Solicitar atendimento empresarial
             </a>
-            </a>      
-            <a href="#contact" class="cta-button">Solicite Orçamento</a>
-            <a href="https://www.google.com/search?q=MNEI+Reformas+%26+Manutenção" target="_blank" class="google-btn">
-                ⭐ Ver avaliações no Google            
-            <a href="https://instagram.com/mneidelgado" target="_blank" class="instagram-btn">
-            📸 Ver nosso Instagram                
+
+          </article>
+
+
+          <article class="business-card">
+
+            <h3>
+              🏠 Para imobiliárias
+            </h3>
+
+            <p>
+              Um parceiro para ajudar a manter os imóveis
+              prontos para locação, entrega ou nova ocupação.
+            </p>
+
+            <ul>
+
+              <li>
+                Atendimento após desocupação
+              </li>
+
+              <li>
+                Levantamento e orçamentos
+              </li>
+
+              <li>
+                Manutenção corretiva
+              </li>
+
+              <li>
+                Pintura e reparos
+              </li>
+
+              <li>
+                Pisos e revestimentos
+              </li>
+
+              <li>
+                Preparação do imóvel
+              </li>
+
+            </ul>
+
+            <a
+              class="btn btn-red"
+              href="#contato"
+              style="margin-top:20px;"
+            >
+              Sou uma imobiliária
             </a>
 
-        </div>
-    </section>
-    
-    <section class="services">
-        <div class="container">
-            <h2 class="section-title">Nossos Serviços em Caxias do Sul</h2>
-            
-            <div class="service-grid">
-                <div class="service-card">
-                    <h3>Pintura</h3>
-                    <ul>
-                        <li>Retoques e pintura de pequenas áreas</li>
-                        <li>Aplicação de massa corrida e texturas</li>
-                        <li>Pintura completa de ambientes</li>
-                        <li><strong>Pintura de telhados</strong></li>
-                    </ul>
-                     <a href="https://wa.me/5554996556155" class="botao">
-                        Solicitar orçamento
-                    </a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Reformas e Manutenção</h3>
-                    <ul>
-                        <li>Reparos em paredes de alvenaria e pisos</li>
-                        <li>Construção e manutenção de paredes de madeira e forro</li>
-                        <li>Pequenas reformas em geral</li>
-                        <li><strong>Execução de calçadas conforme norma (obras residenciais e comerciais - experiências em grandes metragens)</strong></li>
-                    <p class="descricao">
-                        Execução de calçadas dentro das normas de acessibilidade e exigências municipais.
-                    </p>     
-                    </ul>
-                     <a href="https://wa.me/5554996556155" class="botao">
-                        Solicitar orçamento
-                    </a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Hidráulica</h3>
-                    <ul>
-                        <li>Conserto de vazamentos</li>
-                        <li>Instalação de torneiras e tubulações</li>
-                        <li>Desentupimentos simples</li>
-                        <li><strong>Adequação de esgoto para rede pública (SAMAE) - desativação de fossa séptica e ligação conforme norma)</strong></li>
-                    <p class="descricao">
-                        Regularizamos seu sistema de esgoto conforme exigência da prefeitura e SAMAE.
-                    </p>                    
-                    </ul>
-                     <a href="https://wa.me/5554996556155" class="botao">
-                        Solicitar orçamento
-                    </a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Elétrica</h3>
-                    <ul>
-                        <li>Troca de lâmpadas, interruptores e tomadas</li>
-                        <li>Instalação de chuveiros</li>
-                        <li>Reparos em circuitos elétricos</li>
-                    </ul>
-                     <a href="https://wa.me/5554996556155" class="botao">
-                        Solicitar orçamento
-                    </a>
-                </div>
-                
-                <div class="service-card destaque">
-                    <h3>⚡ Instalação de Wall Box</h3>
-                
-                    <ul>
-                        <li><strong>Carregador para veículos elétricos (residencial e comercial)</strong></li>
-                        <li><strong>Análise de carga da rede elétrica</strong></li>
-                        <li><strong>Adequação do quadro conforme norma</strong></li>
-                        <li><strong>Disjuntor e circuito exclusivo</strong></li>
-                        <li><strong>Infraestrutura completa (cabeamento)</strong></li>
-                        <li><strong>Testes e entrega garantida</strong></li>
-                    </ul>
-                
-                    <p class="descricao">
-                        Serviço especializado para carros elétricos com segurança e padrão técnico.
-                    </p>
-                
-                    <a href="https://wa.me/5554996556155" class="botao">
-                        Solicitar orçamento
-                    </a>
-                </div>                
-                
-                <div class="service-card">
-                    <h3>Instalações Diversas</h3>
-                    <ul>
-                        <li>Fixação de suportes, prateleiras e acessórios</li>
-                        <li>Instalações de Redes de Proteção (Janelas, sacadas)</li>
-                        <li>Instalações de varões de cortinas, fechaduras</li>
-                    </ul>
-                     <a href="https://wa.me/5554996556155" class="botao">
-                        Solicitar orçamento
-                    </a>
-                </div>
+          </article>
 
-                <div class="service-card">
-                    <h3>Limpezas</h3>
-                    <ul>
-                        <li><strong>Limpeza de Caixas d'aguá</strong></li>
-                        <li><strong>Limpeza de calhas</strong></li>
-                        <li><strong>Limpeza de ralos</strong></li>
-                        <li><strong>Limpeza de caixas de gordura</strong></li>
-                        <li><strong>Limpeza de telhados</strong></li>
-                        <li><strong>Limpeza de fachadas residenciais e comerciais</strong></li>
-                        <li><strong>Limpeza de placas energia solar</strong></li>
-                    </ul>
-                     <a href="https://wa.me/5554996556155" class="botao">
-                        Solicitar orçamento
-                    </a>
-                </div>
-                
-                <div class="service-card">
-                    <h3>Áreas Externas</h3>
-                    <ul>
-                        <li>Corte de grama</li>
-                        <li>Aplicação de herbicida</li>
-                        <li>Pequenos reparos em jardins</li>
-                    </ul>
-                     <a href="https://wa.me/5554996556155" class="botao">
-                        Solicitar orçamento
-                    </a>
-                </div>
-            </div>
+
         </div>
+
+      </div>
+
     </section>
 
-    <!-- Nova Seção de Avaliações -->
-    <section class="reviews">
-        <div class="container">
-            <h2 class="section-title">O que nossos clientes dizem</h2>
-            <p>Confira as avaliações de quem já contratou nossos serviços</p>
-            
-            <div class="reviews-buttons">
-                <a href="https://g.co/kgs/Ny8VXsQ" target="_blank" class="cta-button google-button">
-                    Ver Avaliações no Google
-                </a>
-                <a href="https://g.co/kgs/Ny8VXsQ" target="_blank" class="cta-button">
-                    Deixe sua Avaliação
-                </a>
-            </div>
+
+    <section class="why">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Por que MNEI?
+          </div>
+
+          <h2>
+            Profissionalismo que começa antes da obra.
+          </h2>
+
+          <p>
+            Nosso trabalho começa entendendo a necessidade,
+            definindo o escopo e apresentando uma solução clara.
+          </p>
+
         </div>
+
+
+        <div class="why-grid">
+
+
+          <div class="why-card">
+
+            <div class="big-number">
+              4,9 ⭐
+            </div>
+
+            <h3>
+              Reputação
+            </h3>
+
+            <p>
+              Avaliações de clientes ajudam a demonstrar
+              a confiança construída pela MNEI.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <div class="big-number">
+              01
+            </div>
+
+            <h3>
+              Um único parceiro
+            </h3>
+
+            <p>
+              Diferentes especialidades para resolver
+              diversas necessidades do mesmo imóvel.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <div class="big-number">
+              02
+            </div>
+
+            <h3>
+              Orçamento claro
+            </h3>
+
+            <p>
+              Escopo, serviços e condições apresentados
+              de forma organizada.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <div class="big-number">
+              03
+            </div>
+
+            <h3>
+              Experiência empresarial
+            </h3>
+
+            <p>
+              Atuação em ambientes residenciais,
+              comerciais, corporativos e imobiliários.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <div class="big-number">
+              04
+            </div>
+
+            <h3>
+              Preventiva e corretiva
+            </h3>
+
+            <p>
+              Não apenas resolver problemas, mas também
+              ajudar a conservar o imóvel.
+            </p>
+
+          </div>
+
+
+          <div class="why-card">
+
+            <div class="big-number">
+              05
+            </div>
+
+            <h3>
+              Atendimento regional
+            </h3>
+
+            <p>
+              Base em Caxias do Sul e experiência
+              em atendimentos fora da cidade.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
     </section>
 
-    <section class="localizacao">
-        <div class="container">
-            <h2 class="section-title">Nossa Localização em Caxias do Sul</h2>
-            <p>Estamos localizados na Rua Luiz Buratto, 408 - Caxias do Sul/RS</p>
-            <p>Atendemos em toda a região: Centro, São Pelegrino, Exposição, Cinquentenário e bairros adjacentes.</p>
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.4424553326444!2d-51.203032525093725!3d-29.181097891779498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea36487891f53%3A0x46d08bbc4f1a79fb!2sMnei%20Reformas%20%26%20Manuten%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1746919007705!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-    
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
-            
-            <div class="contact-methods">
-                <div class="contact-method">
-                    <h3>WhatsApp</h3>
-                    <p>Atendimento rápido e direto</p>
-                    <a href="https://wa.me/5554996556155" class="cta-button whatsapp-button">Chamar no WhatsApp</a>
-                </div>
-                
-                <div class="contact-method">
-                    <h3>Email</h3>
-                    <p>Para orçamentos detalhados</p>
-                    <a href="mailto:mneidelgado@gmail.com.br" class="cta-button">Enviar Email</a>
-                </div>
-                
-                <div class="contact-method">
-                    <h3>Ligação</h3>
-                    <p>Horário comercial: Seg-Sex, 8h-18h</p>
-                    <p>Horário fim de semana: Sáb: 8h-12h</p>
-                    <a href="tel:54996556155" class="cta-button">Ligar Agora</a>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-                <h3 style="margin: 30px 0 20px;">Solicite seu Orçamento gratuito agora</h3>
-                <form id="whatsappForm" onsubmit="sendToWhatsApp(event)">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Telefone:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="bairro">Bairro:</label>
-                        <input type="text" id="bairro" name="bairro" placeholder="Informe seu bairro em Caxias do Sul">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="service">Serviço desejado:</label>
-                        <select id="service" name="service" required>
-                            <option value="">Selecione um serviço...</option>
-                            <option value="Pintura">Pintura</option>
-                            <option value="Reformas">Reformas e Manutenção</option>
-                            <option value="Hidráulica">Hidráulica</option>
-                            <option value="Elétrica">Elétrica</option>
-                            <option value="Wall Box">Instalação de Wall Box</option>
-                            <option value="Wall Box">Limpezas</option>
-                            <option value="Instalações">Instalações Diversas</option>
-                            <option value="Jardinagem">Áreas Externas/Jardinagem</option>
-                            <option value="Outros">Outros</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Detalhes do serviço:</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="cta-button">Enviar para WhatsApp</button>
-                </form>
-                
-                <div id="successMessage" class="hidden success-message">
-                    Mensagem preparada com sucesso! Você será redirecionado para o WhatsApp.
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p><strong>Mnei Reformas & Manutenção</strong> - Serviços de qualidade para seu lar e comércio em Caxias do Sul</p>
-            <p>Endereço: Rua Luiz Buratto, 408 - Caxias do Sul/RS | CEP 95.099-330</p>
-            <p>Telefone/WhatsApp: (54) 99655-6155 | Email: mneidelgado@gmail.com.br</p>
-            
-            <div class="legal-info">
-                <p>CNPJ: 60.892.566/0001-05 | Empresário Individual - ME | Inscrição Municipal: 284643 </p>
-                <p>Atividade Principal: Serviços de pintura de edifícios em geral (CNAE 43.30-4-04)</p>
-            </div>
-            
-            <div style="margin: 20px 0;">
-                <a href="https://g.co/kgs/Ny8VXsQ" target="_blank">
-                    <img src="https://www.gstatic.com/local/business/google_my_business_social_share_icons/google_my_business_en_US.png" 
-                         alt="Google Meu Negócio" 
-                         style="height: 40px; margin: 10px;">
-                </a>
-            </div>
-            
-            <p>© <span id="currentYear"></span> Todos os direitos reservados</p>
-        </div>
-    </footer>
 
-    <script>
-        // Função para enviar para o WhatsApp
-        function sendToWhatsApp(event) {
-            event.preventDefault();
-            
-            // Coletar dados do formulário
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const bairro = document.getElementById('bairro').value;
-            const service = document.getElementById('service').value;
-            const message = document.getElementById('message').value;
-            
-            // Criar mensagem formatada
-            const whatsappMessage = `Olá, vi o site da Mnei Reformas, gostaria de solicitar um orçamento!\n\n` +
-                                   `*Nome:* ${name}\n` +
-                                   `*Telefone:* ${phone}\n` +
-                                   `*Bairro:* ${bairro}\n` +
-                                   `*Serviço desejado:* ${service}\n` +
-                                   `*Detalhes:* ${message}`;
-            
-            // Codificar mensagem para URL
-            const encodedMessage = encodeURIComponent(whatsappMessage);
-            
-            // Mostrar mensagem de sucesso
-            document.getElementById('successMessage').classList.remove('hidden');
-            document.getElementById('whatsappForm').classList.add('hidden');
-            
-            // Redirecionar para WhatsApp após 2 segundos
-            setTimeout(() => {
-                window.location.href = `https://wa.me/5554996556155?text=${encodedMessage}`;
-            }, 2000);
-        }
+    <section id="avaliacoes" class="reviews">
 
-        // Atualizar ano no footer
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
-    </script>
-    <a href="https://wa.me/5554996556155" class="whatsapp-float" target="_blank">
-        💬
-    </a>
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Reputação
+          </div>
+
+          <h2>
+            Quem contrata a MNEI fala por nós.
+          </h2>
+
+        </div>
+
+
+        <div class="rating">
+
+          <span class="stars">
+            ★★★★★
+          </span>
+
+          <strong>
+            4,9 no Google
+          </strong>
+
+          <span>
+            +200 avaliações
+          </span>
+
+        </div>
+
+
+        <p class="review-copy">
+
+          A reputação da MNEI foi construída serviço após
+          serviço, cliente após cliente.
+
+          Consulte as avaliações reais e conheça a experiência
+          de quem já contratou.
+
+        </p>
+
+
+        <a
+          class="btn btn-red"
+          href="https://g.co/kgs/Ny8VXsQ"
+          target="_blank"
+          rel="noopener"
+        >
+          ⭐ Ver avaliações no Google
+        </a>
+
+
+        <a
+          class="btn"
+          href="https://g.co/kgs/Ny8VXsQ"
+          target="_blank"
+          rel="noopener"
+          style="
+            background:white;
+            color:var(--navy);
+            border:1px solid var(--border);
+            margin-left:8px;
+          "
+        >
+          Deixar uma avaliação
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <section id="contato" class="contact">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Vamos conversar
+          </div>
+
+          <h2>
+            Seu imóvel precisa de uma solução?
+          </h2>
+
+          <p>
+            Envie as informações e fale diretamente com a MNEI.
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+          <div class="contact-info">
+
+
+            <div class="contact-item">
+
+              <h3>
+                💬 WhatsApp
+              </h3>
+
+              <p>
+                Atendimento rápido e direto.
+              </p>
+
+              <a
+                href="https://wa.me/5554996556155"
+                target="_blank"
+                rel="noopener"
+              >
+                (54) 99655-6155
+              </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <h3>
+                📧 E-mail
+              </h3>
+
+              <p>
+                Para informações e orçamentos detalhados.
+              </p>
+
+              <a
+                href="mailto:mneidelgado@gmail.com.br"
+              >
+                mneidelgado@gmail.com.br
+              </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <h3>
+                📞 Ligação
+              </h3>
+
+              <p>
+                Segunda a sexta: 8h às 18h
+                <br>
+                Sábado: 8h às 12h
+              </p>
+
+              <a
+                href="tel:+5554996556155"
+              >
+                Ligar agora
+              </a>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <h3>
+                📍 Base
+              </h3>
+
+              <p>
+                Caxias do Sul – RS
+                <br>
+                Atendimento regional.
+              </p>
+
+            </div>
+
+
+          </div>
+
+
+          <div class="form-card">
+
+            <h3>
+              Solicite um orçamento
+            </h3>
+
+            <p class="form-intro">
+
+              Quanto mais detalhes você enviar,
+              melhor poderemos entender sua necessidade.
+
+            </p>
+
+
+            <form id="whatsappForm">
+
+
+              <div class="form-grid">
+
+
+                <div class="form-group">
+
+                  <label for="name">
+                    Nome *
+                  </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="phone">
+                    Telefone *
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    required
+                  >
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="propertyType">
+                    Tipo de imóvel *
+                  </label>
+
+                  <select
+                    id="propertyType"
+                    required
+                  >
+
+                    <option value="">
+                      Selecione...
+                    </option>
+
+                    <option>
+                      Residencial
+                    </option>
+
+                    <option>
+                      Comercial
+                    </option>
+
+                    <option>
+                      Empresa
+                    </option>
+
+                    <option>
+                      Condomínio
+                    </option>
+
+                    <option>
+                      Imobiliária
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                  <label for="service">
+                    Necessidade *
+                  </label>
+
+                  <select
+                    id="service"
+                    required
+                  >
+
+                    <option value="">
+                      Selecione...
+                    </option>
+
+                    <option>
+                      Reforma
+                    </option>
+
+                    <option>
+                      Manutenção
+                    </option>
+
+                    <option>
+                      Manutenção predial
+                    </option>
+
+                    <option>
+                      Pintura
+                    </option>
+
+                    <option>
+                      Elétrica
+                    </option>
+
+                    <option>
+                      Hidráulica
+                    </option>
+
+                    <option>
+                      Piso / Revestimento
+                    </option>
+
+                    <option>
+                      Drywall
+                    </option>
+
+                    <option>
+                      Wall Box
+                    </option>
+
+                    <option>
+                      Limpeza / conservação
+                    </option>
+
+                    <option>
+                      Preparação de imóvel
+                    </option>
+
+                    <option>
+                      Outro
+                    </option>
+
+                  </select>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                  <label for="location">
+                    Cidade / Bairro
+                  </label>
+
+                  <input
+                    type="text"
+                    id="location"
+                    placeholder="Ex.: Caxias do Sul - Centro"
+                  >
+
+                </div>
+
+
+                <div class="form-group full">
+
+                  <label for="message">
+                    Conte o que você precisa *
+                  </label>
+
+                  <textarea
+                    id="message"
+                    required
+                    placeholder="Descreva o serviço, ambiente, medidas aproximadas e outras informações importantes."
+                  ></textarea>
+
+                </div>
+
+
+                <div class="form-group full">
+
+                  <button
+                    type="submit"
+                    class="btn btn-red"
+                    style="width:100%;"
+                  >
+                    💬 Enviar solicitação pelo WhatsApp
+                  </button>
+
+                </div>
+
+
+              </div>
+
+            </form>
+
+
+            <div
+              id="successMessage"
+              class="success-message"
+            >
+              Solicitação preparada.
+              Abrindo o WhatsApp...
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section
+      style="
+        background:#f5f7fa;
+        padding:34px 0;
+      "
+    >
+
+      <div
+        class="container"
+        style="text-align:center;"
+      >
+
+        <p
+          style="
+            color:#657382;
+            font-size:.88rem;
+          "
+        >
+
+          <strong style="color:#14283d;">
+            MNEI Reformas & Manutenção
+          </strong>
+
+          —
+
+          Microempresa (ME),
+          Empresário Individual,
+          CNPJ 60.892.566/0001-05.
+
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <section class="location">
+
+      <div class="container">
+
+        <div class="section-head">
+
+          <div class="section-label">
+            Onde estamos
+          </div>
+
+          <h2>
+            Caxias do Sul – RS
+          </h2>
+
+          <p>
+            Rua Luiz Buratto, 408 –
+            Caxias do Sul/RS • CEP 95099-330
+          </p>
+
+        </div>
+
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3483.4424553326444!2d-51.203032525093725!3d-29.181097891779498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951ea36487891f53%3A0x46d08bbc4f1a79fb!2sMnei%20Reformas%20%26%20Manuten%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1746919007705!5m2!1spt-BR!2sbr"
+          loading="lazy"
+          allowfullscreen
+          title="Localização da MNEI Reformas & Manutenção"
+        >
+        </iframe>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="container">
+
+      <p>
+        <strong>
+          MNEI Reformas & Manutenção
+        </strong>
+      </p>
+
+      <p>
+        Soluções para imóveis residenciais,
+        comerciais e corporativos.
+      </p>
+
+
+      <div class="footer-links">
+
+        <a
+          href="https://wa.me/5554996556155"
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
+
+        <a
+          href="https://instagram.com/mneidelgado"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://g.co/kgs/Ny8VXsQ"
+          target="_blank"
+          rel="noopener"
+        >
+          Google
+        </a>
+
+        <a href="#contato">
+          Orçamento
+        </a>
+
+      </div>
+
+
+      <div class="legal-info">
+
+        <p>
+          CNPJ:
+          60.892.566/0001-05
+          |
+          Empresário Individual • Microempresa (ME)
+        </p>
+
+        <p>
+          Inscrição Municipal:
+          284643
+        </p>
+
+        <p>
+          Atividade Principal:
+          Serviços de pintura de edifícios em geral
+          (CNAE 43.30-4-04)
+        </p>
+
+        <p>
+          Rua Luiz Buratto, 408 -
+          Caxias do Sul/RS |
+          CEP 95099-330
+        </p>
+
+        <p>
+          (54) 99655-6155 |
+          mneidelgado@gmail.com.br
+        </p>
+
+      </div>
+
+
+      <p style="margin-top:20px;">
+
+        ©
+        <span id="currentYear"></span>
+
+        MNEI Reformas & Manutenção.
+
+        Todos os direitos reservados.
+
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <a
+    href="https://wa.me/5554996556155"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Falar com a MNEI pelo WhatsApp"
+  >
+    💬
+  </a>
+
+
+  <script>
+
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+
+    document
+      .getElementById("whatsappForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+
+        const name =
+          document
+            .getElementById("name")
+            .value
+            .trim();
+
+
+        const phone =
+          document
+            .getElementById("phone")
+            .value
+            .trim();
+
+
+        const propertyType =
+          document
+            .getElementById("propertyType")
+            .value;
+
+
+        const service =
+          document
+            .getElementById("service")
+            .value;
+
+
+        const location =
+          document
+            .getElementById("location")
+            .value
+            .trim();
+
+
+        const message =
+          document
+            .getElementById("message")
+            .value
+            .trim();
+
+
+        const whatsappMessage =
+
+          "Olá! Vi o site da MNEI Reformas & Manutenção " +
+          "e gostaria de solicitar um orçamento.\n\n" +
+
+          "*Nome:* " +
+          name +
+          "\n" +
+
+          "*Telefone:* " +
+          phone +
+          "\n" +
+
+          "*Tipo de imóvel:* " +
+          propertyType +
+          "\n" +
+
+          "*Necessidade:* " +
+          service +
+          "\n" +
+
+          "*Cidade/Bairro:* " +
+          (location || "Não informado") +
+          "\n" +
+
+          "*Detalhes:* " +
+          message;
+
+
+        const encodedMessage =
+          encodeURIComponent(whatsappMessage);
+
+
+        document
+          .getElementById("successMessage")
+          .style.display = "block";
+
+
+        setTimeout(function() {
+
+          window.open(
+            "https://wa.me/5554996556155?text=" +
+            encodedMessage,
+            "_blank"
+          );
+
+        }, 500);
+
+      });
+
+  </script>
+
 </body>
 </html>
