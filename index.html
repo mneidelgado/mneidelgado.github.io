@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b3f">
 
   <title>MNEI Reformas & Manutenção | Soluções para Imóveis em Caxias do Sul</title>
 
@@ -1888,6 +1889,8 @@
                   <input
                     type="text"
                     id="name"
+                    name="name"
+                    autocomplete="name"
                     required
                   >
 
@@ -1903,6 +1906,9 @@
                   <input
                     type="tel"
                     id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    inputmode="tel"
                     required
                   >
 
@@ -1917,6 +1923,7 @@
 
                   <select
                     id="propertyType"
+                    name="propertyType"
                     required
                   >
 
@@ -1957,6 +1964,7 @@
 
                   <select
                     id="service"
+                    name="service"
                     required
                   >
 
@@ -2026,6 +2034,8 @@
                   <input
                     type="text"
                     id="location"
+                    name="location"
+                    autocomplete="address-level2"
                     placeholder="Ex.: Caxias do Sul - Centro"
                   >
 
@@ -2040,6 +2050,7 @@
 
                   <textarea
                     id="message"
+                    name="message"
                     required
                     placeholder="Descreva o serviço, ambiente, medidas aproximadas e outras informações importantes."
                   ></textarea>
@@ -2068,6 +2079,8 @@
             <div
               id="successMessage"
               class="success-message"
+              role="status"
+              aria-live="polite"
             >
               Solicitação preparada.
               Abrindo o WhatsApp...
@@ -2348,24 +2361,24 @@
           message;
 
 
-        const encodedMessage =
+        const whatsappUrl =
+          "https://wa.me/5554996556155?text=" +
           encodeURIComponent(whatsappMessage);
 
+        const statusMessage = document.getElementById("successMessage");
+        statusMessage.textContent = "Abrindo o WhatsApp para você revisar e enviar a solicitação...";
+        statusMessage.style.display = "block";
 
-        document
-          .getElementById("successMessage")
-          .style.display = "block";
+        // Open synchronously in the submit event to reduce popup-blocking.
+        const whatsappWindow = window.open(whatsappUrl, "_blank");
 
-
-        setTimeout(function() {
-
-          window.open(
-            "https://wa.me/5554996556155?text=" +
-            encodedMessage,
-            "_blank"
-          );
-
-        }, 500);
+        if (whatsappWindow) {
+          // Prevent the new page from controlling the originating page.
+          whatsappWindow.opener = null;
+        } else {
+          // If popups are blocked, continue in the current tab instead.
+          window.location.href = whatsappUrl;
+        }
 
       });
 
