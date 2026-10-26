@@ -760,6 +760,22 @@
 
     }
 
+    /* Respeita a preferência do usuário por menos animações. */
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
     /* =========================
        RESPONSIVO
     ========================= */
@@ -1908,9 +1924,16 @@
                     id="phone"
                     name="phone"
                     autocomplete="tel"
-                    inputmode="tel"
+                    inputmode="numeric"
+                    pattern="[0-9]{10,13}"
+                    minlength="10"
+                    maxlength="13"
+                    title="Digite de 10 a 13 números, incluindo o DDD. Não use letras."
+                    placeholder="54999999999"
+                    aria-describedby="phoneHelp"
                     required
                   >
+                  <small id="phoneHelp" style="display:block;color:#687887;margin-top:5px;">Digite somente números, incluindo o DDD. Se quiser, inclua o código do país 55.</small>
 
                 </div>
 
@@ -2280,108 +2303,74 @@
 
 
   <script>
+    // Atualiza automaticamente o ano no rodapé.
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-    document.getElementById("currentYear").textContent =
-      new Date().getFullYear();
+    const phoneInput = document.getElementById("phone");
+    const whatsappForm = document.getElementById("whatsappForm");
+    const statusMessage = document.getElementById("successMessage");
 
+    // Permite somente dígitos no telefone, inclusive ao colar texto.
+    phoneInput.addEventListener("input", function () {
+      const digitsOnly = this.value.replace(/\D/g, "").slice(0, 13);
+      if (this.value !== digitsOnly) {
+        this.value = digitsOnly;
+      }
+      this.setCustomValidity("");
+    });
 
-    document
-      .getElementById("whatsappForm")
-      .addEventListener("submit", function(event) {
+    // Valida o número antes de preparar a mensagem para o WhatsApp.
+    phoneInput.addEventListener("blur", function () {
+      const digits = this.value.replace(/\D/g, "");
+      if (digits.length > 0 && (digits.length < 10 || digits.length > 13)) {
+        this.setCustomValidity("Informe um telefone com 10 a 13 dígitos, incluindo o DDD.");
+      } else {
+        this.setCustomValidity("");
+      }
+    });
 
-        event.preventDefault();
+    whatsappForm.addEventListener("submit", function (event) {
+      event.preventDefault();
 
+      // A validação nativa do formulário ocorre antes do evento submit.
+      const name = document.getElementById("name").value.trim();
+      const phone = phoneInput.value.replace(/\D/g, "");
+      const propertyType = document.getElementById("propertyType").value;
+      const service = document.getElementById("service").value;
+      const location = document.getElementById("location").value.trim();
+      const message = document.getElementById("message").value.trim();
 
-        const name =
-          document
-            .getElementById("name")
-            .value
-            .trim();
+      if (phone.length < 10 || phone.length > 13) {
+        phoneInput.setCustomValidity("Informe um telefone com 10 a 13 dígitos, incluindo o DDD.");
+        phoneInput.reportValidity();
+        phoneInput.focus();
+        return;
+      }
 
+      phoneInput.setCustomValidity("");
 
-        const phone =
-          document
-            .getElementById("phone")
-            .value
-            .trim();
+      const whatsappMessage =
+        "Olá! Vi o site da MNEI Reformas & Manutenção e gostaria de solicitar um orçamento.\n\n" +
+        "*Nome:* " + name + "\n" +
+        "*Telefone:* " + phone + "\n" +
+        "*Tipo de imóvel:* " + propertyType + "\n" +
+        "*Necessidade:* " + service + "\n" +
+        "*Cidade/Bairro:* " + (location || "Não informado") + "\n" +
+        "*Detalhes:* " + message;
 
+      const whatsappUrl = "https://wa.me/5554996556155?text=" + encodeURIComponent(whatsappMessage);
 
-        const propertyType =
-          document
-            .getElementById("propertyType")
-            .value;
+      statusMessage.textContent = "Abrindo o WhatsApp para você revisar e enviar a solicitação...";
+      statusMessage.style.display = "block";
 
+      // Abre durante a ação do usuário para reduzir bloqueios de pop-up.
+      const whatsappWindow = window.open(whatsappUrl, "_blank", "noopener,noreferrer");
 
-        const service =
-          document
-            .getElementById("service")
-            .value;
-
-
-        const location =
-          document
-            .getElementById("location")
-            .value
-            .trim();
-
-
-        const message =
-          document
-            .getElementById("message")
-            .value
-            .trim();
-
-
-        const whatsappMessage =
-
-          "Olá! Vi o site da MNEI Reformas & Manutenção " +
-          "e gostaria de solicitar um orçamento.\n\n" +
-
-          "*Nome:* " +
-          name +
-          "\n" +
-
-          "*Telefone:* " +
-          phone +
-          "\n" +
-
-          "*Tipo de imóvel:* " +
-          propertyType +
-          "\n" +
-
-          "*Necessidade:* " +
-          service +
-          "\n" +
-
-          "*Cidade/Bairro:* " +
-          (location || "Não informado") +
-          "\n" +
-
-          "*Detalhes:* " +
-          message;
-
-
-        const whatsappUrl =
-          "https://wa.me/5554996556155?text=" +
-          encodeURIComponent(whatsappMessage);
-
-        const statusMessage = document.getElementById("successMessage");
-        statusMessage.textContent = "Abrindo o WhatsApp para você revisar e enviar a solicitação...";
-        statusMessage.style.display = "block";
-
-        // Open synchronously in the submit event to reduce popup-blocking.
-        const whatsappWindow = window.open(whatsappUrl, "_blank");
-
-        if (whatsappWindow) {
-          // Prevent the new page from controlling the originating page.
-          whatsappWindow.opener = null;
-        } else {
-          // If popups are blocked, continue in the current tab instead.
-          window.location.href = whatsappUrl;
-        }
-
-      });
-
+      if (!whatsappWindow) {
+        // Alternativa caso o navegador bloqueie a nova janela.
+        window.location.href = whatsappUrl;
+      }
+    });
   </script>
 
 </body>
